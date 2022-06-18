@@ -14,6 +14,8 @@
     --color6: #2563ff;
     --color7: #40975f;
     --color8: #999ca5;
+    --color9: #09142e;
+    --color10: #fcae61;
     /* font and typography */
     --font-poppins: 'Poppins', sans-serif;
     /* z index */
@@ -74,6 +76,7 @@ img {
     position: fixed;
     width: 100%;
     z-index: var(--header-z-fixed);
+    background-color: var(--color3);
 }
 
 .heading .container {
@@ -82,6 +85,12 @@ img {
     align-items: center;
     padding-top: 92px;
     padding-bottom: 20px;
+}
+
+.container--shrink {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: red;
 }
 
 .heading input,
@@ -99,12 +108,12 @@ img {
 }
 
 .first-btn {
-    background-color: #2500f9;
+    background-color: var(--color2);
     font-size: 16px;
     line-height: 15px;
-    color: #ffffff;
+    color: var(--color3);
     font-weight: 700;
-    font-family: "Poppins";
+    font-family: var(--font-poppins);
     padding: 20px clamp(20px, 2.5vw, 41px);
     border-radius: 29px;
     display: inline-flex;
@@ -125,9 +134,17 @@ img {
 .menu-bar ul li a {
     font-size: 16px;
     line-height: 44px;
-    color: #242f51;
+    color: var(--color1);
     font-weight: 400;
-    font-family: "Poppins";
+    font-family: var(--font-poppins);
+}
+
+.menu-bar ul li a:hover {
+    color: var(--color2);
+}
+
+.menu-bar ul li .active {
+    color: var(--color10);
 }
 
 
