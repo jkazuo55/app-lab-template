@@ -108,6 +108,7 @@ img {
     padding: 20px clamp(20px, 2.5vw, 41px);
     border-radius: 29px;
     display: inline-flex;
+    text-align: center;
 }
 
 .menu-bar {
@@ -142,29 +143,21 @@ img {
     .navigation {
         display: none;
         flex-basis: 100%;
-        padding: 0;
+        padding-left: 0;
     }
     .heading .container {
         flex-wrap: wrap;
     }
     .heading .logo,
     .heading label {
-        flex-basis: 50%;
+        max-width: 50%;
     }
     .heading label {
         display: flex;
         justify-content: end;
     }
-    .hola {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
     .menu-bar {
         margin: 0 auto;
-    }
-    .menu-bar .first-btn {
-        /* display: block; */
     }
     .menu-bar ul {
         flex-direction: column;
@@ -176,6 +169,7 @@ img {
         display: block;
     }
     .heading input:checked~.navigation {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 }
