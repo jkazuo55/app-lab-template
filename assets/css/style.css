@@ -61,8 +61,8 @@ img {
 /* ============ SELECTORS ============= */
 
 .container {
-    padding-left: var(--padding-container);
-    padding-right: var(--padding-container);
+    padding-left: var(--padding-container-x);
+    padding-right: var(--padding-container-x);
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -84,8 +84,98 @@ img {
     padding-bottom: 20px;
 }
 
-.heading .navigation~.heading a {
-    width: 200px;
+.heading input,
+.heading label {
+    display: none;
 }
 
-@media (max-width:768px) {}
+.navigation {
+    max-width: 703px;
+    padding-left: var(--padding-container-x);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first-btn {
+    background-color: #2500f9;
+    font-size: 16px;
+    line-height: 15px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Poppins";
+    padding: 20px clamp(20px, 2.5vw, 41px);
+    border-radius: 29px;
+    display: inline-flex;
+}
+
+.menu-bar {
+    width: 100%;
+    max-width: 460px;
+}
+
+.menu-bar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-bar ul li a {
+    font-size: 16px;
+    line-height: 44px;
+    color: #242f51;
+    font-weight: 400;
+    font-family: "Poppins";
+}
+
+
+/* ===========  queries =========== */
+
+@media (max-width:768px) {
+    .heading label {
+        display: block;
+    }
+    .heading label span:nth-child(2) {
+        display: none;
+    }
+    .navigation {
+        display: none;
+        flex-basis: 100%;
+        padding: 0;
+    }
+    .heading .container {
+        flex-wrap: wrap;
+    }
+    .heading .logo,
+    .heading label {
+        flex-basis: 50%;
+    }
+    .heading label {
+        display: flex;
+        justify-content: end;
+    }
+    .hola {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .menu-bar {
+        margin: 0 auto;
+    }
+    .menu-bar .first-btn {
+        /* display: block; */
+    }
+    .menu-bar ul {
+        flex-direction: column;
+    }
+    .heading input:checked~label span:nth-child(1) {
+        display: none;
+    }
+    .heading input:checked~label span:nth-child(2) {
+        display: block;
+    }
+    .heading input:checked~.navigation {
+        display: block;
+    }
+}
