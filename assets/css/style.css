@@ -22,7 +22,7 @@
     --header-z-fixed: 99;
     /* paddings */
     --padding-container-x: 15px;
-    --padding-container-y: 115px
+    --padding-container-y: 115px;
 }
 
 
@@ -83,14 +83,15 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.container--heading {
     padding-top: 92px;
     padding-bottom: 20px;
 }
 
 .container--shrink {
     padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: red;
 }
 
 .heading input,
