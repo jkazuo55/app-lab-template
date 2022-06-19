@@ -95,12 +95,16 @@ img {
     padding-top: 20px;
 }
 
-.logo {
+.logo a {
     font-size: 30px;
     line-height: 44px;
     color: var(--color10);
     font-weight: 700;
     font-family: var(--font-poppins);
+}
+
+.logo span {
+    color: var(--color9);
 }
 
 .heading input,
@@ -161,6 +165,24 @@ img {
 /* ============ end heading section ============*/
 
 
+/* ============ start hero section ============*/
+
+.hero {
+    background-color: yellow;
+}
+
+.hero .container {
+    max-width: 1068px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 170px;
+    align-items: center;
+}
+
+
+/* ============ end hero section ============*/
+
+
 /* ============ start footering section ============*/
 
 .footering {
@@ -179,11 +201,7 @@ img {
     padding-bottom: 31px;
 }
 
-.logo a {
-    color: var(--color10);
-}
-
-.logo span {
+.footering .logo span {
     color: var(--color3);
 }
 
@@ -194,18 +212,9 @@ img {
     padding-top: 38px;
 }
 
-.footering .footering__socials li {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* text-align: center; */
-}
-
 .footering .footering__socials i {
     font-size: 30px;
-    /* letter-spacing: 23px; */
-    /* line-height: 44px; */
     color: var(--color11);
-    /* font-weight: 400; */
     text-align: center;
 }
 
