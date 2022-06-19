@@ -179,6 +179,29 @@ img {
     align-items: center;
 }
 
+.hero .hero__info span {
+    display: flex;
+    align-items: center;
+    padding-bottom: 18px;
+}
+
+.hero .hero__info span p {
+    padding-left: 10px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #242f51;
+    font-weight: 400;
+    font-family: "Poppins";
+}
+
+.hero .hero__info h1 {
+    font-size: 60px;
+    line-height: 75px;
+    color: #242f51;
+    font-weight: 600;
+    font-family: "Poppins";
+}
+
 
 /* ============ end hero section ============*/
 
