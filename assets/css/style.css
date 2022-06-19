@@ -16,6 +16,7 @@
     --color8: #999ca5;
     --color9: #09142e;
     --color10: #fcae61;
+    --color11: #273043;
     /* font and typography */
     --font-poppins: 'Poppins', sans-serif;
     /* z index */
@@ -94,6 +95,14 @@ img {
     padding-top: 20px;
 }
 
+.logo {
+    font-size: 30px;
+    line-height: 44px;
+    color: var(--color10);
+    font-weight: 700;
+    font-family: var(--font-poppins);
+}
+
 .heading input,
 .heading label {
     display: none;
@@ -147,6 +156,61 @@ img {
 .menu-bar ul li .active {
     color: var(--color10);
 }
+
+
+/* ============ end heading section ============*/
+
+
+/* ============ start footering section ============*/
+
+.footering {
+    background-color: var(--color9);
+}
+
+.footering .container {
+    max-width: 490px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 106px;
+}
+
+.footering .logo {
+    padding-bottom: 31px;
+}
+
+.logo a {
+    color: var(--color10);
+}
+
+.logo span {
+    color: var(--color3);
+}
+
+.footering .footering__socials {
+    display: flex;
+    min-width: 168px;
+    justify-content: space-between;
+    padding-top: 38px;
+}
+
+.footering .footering__socials li {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* text-align: center; */
+}
+
+.footering .footering__socials i {
+    font-size: 30px;
+    /* letter-spacing: 23px; */
+    /* line-height: 44px; */
+    color: var(--color11);
+    /* font-weight: 400; */
+    text-align: center;
+}
+
+
+/* ============ end footering section ============*/
 
 
 /* ===========  queries =========== */
